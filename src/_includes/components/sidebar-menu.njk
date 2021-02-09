@@ -1,0 +1,13 @@
+<nav class="flex flex-col divide-y divide-gray-300 border border-gray-300 rounded-md">
+  {% for item in sidebarMenuItems %}
+    <a href="{{ item.url }}" class="flex items-center py-3 {{ 'hover:text-indigo-800' if item.url != page.url }} {{ 'bg-gray-200' if item.url == page.url }}">
+
+      {% if item.icon %}
+        {% set svgClasses = "ml-4 h-8 w-8" %}
+        {# {% include "assets/svg/" + item.icon + ".svg" %} #}
+      {% endif %}
+
+      <span class="ml-4 font-semibold">{{ item.title }}</span>
+    </a>
+  {% endfor %}
+</nav>

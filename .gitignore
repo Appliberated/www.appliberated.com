@@ -1,0 +1,17 @@
+.eleventyignore
+
+# dependencies installed by npm
+node_modules/
+package-lock.json
+
+# build artefacts
+_site/
+
+# vscode (IDE) generated files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!*.code-snippets
+*.code-workspace

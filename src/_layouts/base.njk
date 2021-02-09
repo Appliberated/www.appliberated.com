@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {# Required meta tags #}
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  {# SEO #}
+  <title>{{ seoTitle }}</title>
+  <meta name="description" content="{{ seoDescription }}">
+  <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
+
+  {# Tailwind & Site CSS #}
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+  {# Icons, manifest, theme #}
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#000000">
+
+  {# Google Analytics  #}
+  {# {% if site.isProduction %}
+    {% include "blocks/head/google-analytics.njk" %}
+  {% endif %} #}
+</head>
+<body>
+
+    <section>
+      {% if layoutHero %}
+        {% include "blocks/heroes/" + layoutHero + ".njk" %}
+      {% else %}
+        {# {% include "templates/basic-jumbotron.njk" %} #}
+      {% endif %}
+    </section>
+
+  <div>
+    {{ content | safe }}
+  </div>
+
+  {% include "blocks/footer/footer.njk" %}
+</body>
+</html>

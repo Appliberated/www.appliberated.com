@@ -1,0 +1,8 @@
+{
+    "navTopSection": "products",
+    "navApp": "defectpx",
+    "navAppName": "DefectPX",
+    "layout": "pages/page-app-inner",
+    "layoutHero": "apps/defectpx-donate",
+    "layoutSidebar": "apps/defectpx"
+}

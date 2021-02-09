@@ -1,0 +1,32 @@
+{
+  "name": "appliberated.com",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "dev:postcss": "postcss src/assets/css/main.css -o _site/assets/css/main.css -w",
+    "dev:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve --watch --quiet",
+    "start": "npm-run-all clean --parallel dev:*",
+    "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:postcss": "cross-env NODE_ENV=production postcss src/assets/css/main.css -o _site/assets/css/main.css",
+    "build": "npm-run-all clean build:*"
+  },
+  "keywords": [],
+  "author": "Appliberated",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.4",
+    "cross-env": "^7.0.3",
+    "markdown-it": "^12.0.4",
+    "markdown-it-attrs": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}
