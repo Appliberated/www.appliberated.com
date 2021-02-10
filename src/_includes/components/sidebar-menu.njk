@@ -1,13 +1,14 @@
-<nav class="flex flex-col divide-y divide-gray-300 border border-gray-300 rounded-md">
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+  </symbol>
+</svg>
+
+<nav class="flex flex-col p-2">
   {% for item in sidebarMenuItems %}
-    <a href="{{ item.url }}" class="flex items-center py-3 {{ 'hover:text-indigo-800' if item.url != page.url }} {{ 'bg-gray-200' if item.url == page.url }}">
-
-      {% if item.icon %}
-        {% set svgClasses = "ml-4 h-8 w-8" %}
-        {# {% include "assets/svg/" + item.icon + ".svg" %} #}
-      {% endif %}
-
-      <span class="ml-4 font-semibold">{{ item.title }}</span>
+    <a href="{{ item.url }}" class="my-1 px-4 py-1.5 flex items-center justify-between rounded hover:bg-gray-100 {{ 'bg-gray-100 text-indigo-800' if item.url == page.url else 'text-gray-500' }}">
+      <span class="font-medium">{{ item.title }}</span>
+      <svg class="h-5 w-5"><use xlink:href="#chevron-right" /></svg>
     </a>
   {% endfor %}
 </nav>

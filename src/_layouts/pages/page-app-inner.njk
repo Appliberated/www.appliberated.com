@@ -2,21 +2,24 @@
 layout: base
 ---
 
-<div class="apl-container">
 
-  <h1 class="apl-page-title">{{ title }}</h1>
-
-  <div class="mt-12 lg:grid lg:grid-cols-12 space-x-20 space-y-20 lg:space-y-0">
-    <div class="lg:col-span-8">
+<div class="flex">
+  <div class="border-r flex-shrink-0 w-72 relative">
+    <aside class="">
+      {% include "blocks/sidebars/" + layoutLeftSidebar + ".njk" %}
+    </aside>
+  </div>
+  <div class="flex max-w-screen-lg mx-auto">
+    <div class="max-w-3/4">
       <main class="{{ 'prose max-w-none' if layoutContentProse }}">
+        <h1 class="apl-page-title">{{ title }}</h1>
         {{ content | safe }}
       </main>
     </div>
-    <div class="lg:col-span-4">
-      <aside class="lg:w-5/6 max-w-sm mx-auto lg:mx-0">
-        {% include "blocks/sidebars/" + layoutSidebar + ".njk" %}
+    <div class="max-w-1/4">
+      <aside>
+        {% include "blocks/sidebars/" + layoutRightSidebar + ".njk" %}
       </aside>
     </div>
   </div>
-
 </div>
