@@ -24,19 +24,20 @@
   {% endif %} #}
 </head>
 <body>
+    {% include "blocks/common/header.njk" %}  
 
-    <section>
+    {# <section>
       {% if layoutHero %}
         {% include "blocks/heroes/" + layoutHero + ".njk" %}
       {% else %}
-        {# {% include "templates/basic-jumbotron.njk" %} #}
+        {% include "templates/basic-jumbotron.njk" %}
       {% endif %}
-    </section>
+    </section> #}
 
   <div>
     {{ content | safe }}
   </div>
 
-  {% include "blocks/footer/footer.njk" %}
+  {% include "blocks/common/footer.njk" %}
 </body>
 </html>

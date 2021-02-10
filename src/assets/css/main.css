@@ -18,16 +18,16 @@
   }
 
   .apl-page-title {
-    @apply mt-12 text-4xl font-light text-gray-900;
+    @apply text-5xl font-bold text-gray-900;
   }
 
   .apl-btn {
-    @apply px-9 py-3 inline-block rounded-md;
+    @apply px-3 py-2 inline-block rounded text-base;
     @apply no-underline !important;
   }
 
   .apl-btn-primary {
-    @apply bg-indigo-800;
+    @apply bg-purple-600;
     @apply text-white !important;
   }
 

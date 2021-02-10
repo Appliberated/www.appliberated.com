@@ -4,20 +4,20 @@ layout: base
 
 
 <div class="flex">
-  <div class="border-r flex-shrink-0 w-72 relative">
-    <aside class="">
+  <div class="border-r flex-shrink-0 w-68 relative">
+    <aside class="sticky h-screen top-0">
       {% include "blocks/sidebars/" + layoutLeftSidebar + ".njk" %}
     </aside>
   </div>
-  <div class="flex max-w-screen-lg mx-auto">
-    <div class="max-w-3/4">
-      <main class="{{ 'prose max-w-none' if layoutContentProse }}">
-        <h1 class="apl-page-title">{{ title }}</h1>
+  <div class="mx-auto py-8 flex max-w-screen-lg">
+    <main class="px-4 max-w-3/4">
+      <h1 class="apl-page-title">{{ title }}</h1>
+      <div class="mt-12 {{ 'prose prose-purple max-w-none' if layoutContentProse }}">
         {{ content | safe }}
-      </main>
-    </div>
-    <div class="max-w-1/4">
-      <aside>
+      </div>
+    </main>
+    <div class="px-4 max-w-1/4">
+      <aside class="border-l p-4 text-gray-500">
         {% include "blocks/sidebars/" + layoutRightSidebar + ".njk" %}
       </aside>
     </div>
