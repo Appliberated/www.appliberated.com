@@ -23,7 +23,7 @@
     {% include "blocks/head/google-analytics.njk" %}
   {% endif %} #}
 </head>
-<body>
+<body id="site">
   <div class="apl-bg-hero">
     {% include "blocks/common/header.njk" %}
 
@@ -33,6 +33,10 @@
       {% include "templates/default-hero.njk" %}
     {% endif %}
   </div>
+
+  {% if sectionMenu %}
+    {% include "components/section-menu.njk" %}
+  {% endif %}
 
   <div>
     {{ content | safe }}

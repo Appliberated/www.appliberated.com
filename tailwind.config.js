@@ -1,4 +1,5 @@
 module.exports = {
+  important: '#site',
   purge: [
     '_site/**/*.html',
   ],

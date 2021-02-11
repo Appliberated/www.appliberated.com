@@ -2,9 +2,32 @@
     "navTopSection": "products",
     "navApp": "defectpx",
     "navAppName": "DefectPX",
-    "layout": "pages/page-app-inner-2",
-    "layoutSectionMenu": "apps/defectpx",
-    "layoutLeftSidebar": "apps/defectpx-left",
-    "layoutRightSidebar": "apps/defectpx-right",
-    "sectionLead": "easily check for dead or defective pixels"
+    "layout": "pages/page-with-title",
+    "sectionLead": "easily check for dead or defective pixels",
+    "sectionMenu": [
+        {
+            "title": "Overview",
+            "url": "/defectpx/"
+        },
+        {
+            "title": "Help",
+            "url": "/defectpx/help/"
+        },
+        {
+            "title": "Reviews",
+            "url": "/defectpx/reviews/"
+        },
+        {
+            "title": "License",
+            "url": "/defectpx/license/"
+        },
+        {
+            "title": "Download",
+            "url": "/defectpx/download/"
+        },
+        {
+            "title": "Donate",
+            "url": "/defectpx/donate/"
+        }
+    ]
 }

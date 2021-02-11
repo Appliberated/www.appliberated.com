@@ -1,7 +1,7 @@
 <section class="border-b py-4 bg-purple-50">
   <div class="apl-container">
     <nav class="flex">
-      {% for item in sectionMenuItems %}
+      {% for item in sectionMenu %}
         <a href="{{ item.url }}" class="my-1 px-4 py-1.5 flex items-center justify-between hover:text-purple-300 {{ 'text-purple-600' if item.url == page.url else 'text-gray-500' }}">
           <span class="font-medium">{{ item.title }}</span>
           <svg class="h-5 w-5"><use xlink:href="#chevron-right" /></svg>
