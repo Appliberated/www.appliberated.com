@@ -24,15 +24,15 @@
   {% endif %} #}
 </head>
 <body>
+  <div class="apl-bg-hero">
     {% include "blocks/common/header.njk" %}
 
-    {# <section>
-      {% if layoutHero %}
-        {% include "blocks/heroes/" + layoutHero + ".njk" %}
-      {% else %}
-        {% include "templates/basic-jumbotron.njk" %}
-      {% endif %}
-    </section> #}
+    {% if layoutHero %}
+      {% include "blocks/heroes/" + layoutHero + ".njk" %}
+    {% else %}
+      {% include "templates/default-hero.njk" %}
+    {% endif %}
+  </div>
 
   <div>
     {{ content | safe }}

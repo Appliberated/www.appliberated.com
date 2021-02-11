@@ -2,8 +2,9 @@
     "navTopSection": "products",
     "navApp": "defectpx",
     "navAppName": "DefectPX",
-    "layout": "pages/page-app-inner",
-    "layoutHero": "apps/defectpx-donate",
+    "layout": "pages/page-app-inner-2",
+    "layoutSectionMenu": "apps/defectpx",
     "layoutLeftSidebar": "apps/defectpx-left",
-    "layoutRightSidebar": "apps/defectpx-right"
+    "layoutRightSidebar": "apps/defectpx-right",
+    "sectionLead": "easily check for dead or defective pixels"
 }

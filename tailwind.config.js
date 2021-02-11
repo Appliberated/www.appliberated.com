@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         'dark-footer': '#151515',
       },
+      padding: {
+        '38': '9.5rem',
+      },
       width: {
         '68': '19rem',
       },
