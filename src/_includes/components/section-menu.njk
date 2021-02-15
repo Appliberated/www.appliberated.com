@@ -1,8 +1,8 @@
-<section class="border-b py-4 bg-purple-50">
-  <div class="apl-container">
+<section class="shadow-lg mb-4 border-b py-4 bg-gray-800 bg-opacity-10">
+  <div class="apl-container max-w-screen-sm">
     <nav class="flex">
       {% for item in sectionMenu %}
-        <a href="{{ item.url }}" class="my-1 px-4 py-1.5 flex items-center justify-between hover:text-purple-300 {{ 'text-purple-600' if item.url == page.url else 'text-gray-500' }}">
+        <a href="{{ item.url }}" class="my-1 px-4 py-1.5 flex items-center justify-between hover:text-yellow-300 transition-colors duration-500 {{ 'text-yellow-300' if item.url == page.url }}">
           <span class="font-medium">{{ item.title }}</span>
           <svg class="h-5 w-5"><use xlink:href="#chevron-right" /></svg>
         </a>

@@ -24,7 +24,8 @@
   {% endif %} #}
 </head>
 <body id="site">
-  <div class="apl-bg-hero">
+  <div class="bg-gray-50">
+  <div class="apl-bg-hero text-white">
     {% include "blocks/common/header.njk" %}
 
     {% if layoutHero %}
@@ -32,16 +33,20 @@
     {% else %}
       {% include "templates/default-hero.njk" %}
     {% endif %}
+
+    {% if sectionMenu %}
+      {% include "components/section-menu.njk" %}
+    {% endif %}
+
   </div>
 
-  {% if sectionMenu %}
-    {% include "components/section-menu.njk" %}
-  {% endif %}
 
-  <div>
+  <div class="">
     {{ content | safe }}
   </div>
+  
 
   {% include "blocks/common/footer.njk" %}
+  </div>
 </body>
 </html>
