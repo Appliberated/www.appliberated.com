@@ -1,0 +1,10 @@
+---
+layout: pages/page
+---
+
+<div class="apl-container max-w-screen-sm">
+  <main class="py-16 {{ 'prose prose-purple max-w-none' if layoutContentProse }}">
+    <h1 class="apl-page-title">{{ title }}</h1>
+    {{ content | safe }}
+  </main>
+</div>

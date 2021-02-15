@@ -2,7 +2,7 @@
     "topSection": "apps",
     "navApp": "defectpx",
     "navAppName": "DefectPX",
-    "layout": "pages/page-with-title",
+    "layout": "pages/page-sm",
     "sectionLead": "easily check for dead or defective pixels",
     "sectionMenu": [
         {
@@ -29,5 +29,6 @@
             "title": "Donate",
             "url": "/defectpx/donate/"
         }
-    ]
+    ],
+    "bottomCTA": "templates/donate-bottom-cta.njk"
 }

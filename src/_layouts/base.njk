@@ -44,7 +44,11 @@
   <div class="">
     {{ content | safe }}
   </div>
-  
+
+  {% if bottomCTA %}
+    {% include bottomCTA %}
+  {% endif %}
+
 
   {% include "blocks/common/footer.njk" %}
   </div>
