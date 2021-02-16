@@ -1,14 +1,14 @@
-
-// const filters = require('./utils/filters.js');
+const filters = require('./utils/filters.js');
 
 module.exports = function (eleventyConfig) {
 
   // Filters & Shortcodes
-  // filters(eleventyConfig);
+  filters(eleventyConfig);
   // shortcodes(eleventyConfig);
 
   // Eleventy
   eleventyConfig.addPassthroughCopy('src/assets/styles/*.css');
+  eleventyConfig.addPassthroughCopy('src/assets/img');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.setDataDeepMerge(true);
