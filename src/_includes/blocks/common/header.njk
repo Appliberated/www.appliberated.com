@@ -1,10 +1,13 @@
 {% macro headerNavItem(link, title, itemSection) %}
-  <a class="inline-block px-4 py-1 {{ 'text-yellow-300' if itemSection == topSection }} hover:text-yellow-300 transition-colors duration-500" href="{{ link | url }}">{{ title }}</a>
+  {# <a class="inline-block px-4 py-1 {{ 'text-yellow-300' if itemSection == topSection }} hover:text-yellow-300 transition-colors duration-500" href="{{ link | url }}">{{ title }}</a> #}
+  <a class="inline-block px-4 py-1 {{ 'text-purple-600' if itemSection == topSection }} hover:text-yellow-300 transition-colors duration-500" href="{{ link | url }}">{{ title }}</a>
 {% endmacro %}
 
-<header>
+<header class="bg-gray-50 text-black">
+{# <header class=""> #}
   <div class="apl-container max-w-screen-lg">
-    <div class="py-6 border-b border-purple-400 sm:flex sm:items-center sm:justify-between">
+    {# <div class="border-b border-purple-400 py-6 sm:flex sm:items-center sm:justify-between"> #}
+    <div class="py-4 sm:flex sm:items-center sm:justify-between">
       <a class="text-xl italic font-semibold tracking-widest" href="{{ '/' | url }}">
         <span class="font-bold">APP</span>LIBERATED
       </a>
@@ -17,7 +20,8 @@
         {{ headerNavItem("/about/", "About", "about") }}
       </nav>
 
-      <a href="/{{ navApp }}/donate/" class="apl-btn apl-btn-hero">Donate</a>
+      {# <a href="/{{ navApp }}/donate/" class="apl-btn apl-btn-hero">Donate</a> #}
+      <a href="/{{ navApp }}/donate/" class="apl-btn apl-btn-primary">Donate</a>
     </div>
   </div>
 </header>
