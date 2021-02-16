@@ -1,0 +1,29 @@
+---
+seoTitle: DefectPX
+seoDescription: 
+
+layout: pages/page-lg-titleless
+---
+
+{% from "templates/review-list.njk" import reviewList %}
+
+{% set reviews = [
+  {
+    source: "Softpedia",
+    url: "https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/DefectPX.shtml",
+    quote: "A small but very useful application which allows you to easily check for dead or defective pixels on LCD monitors."
+  },
+  {
+    source: "List of Freeware",
+    url: "https://listoffreeware.com/free-dead-pixel-test-software-windows/",
+    extra: "Nishant Gola, Author",
+    quote: "DefectPX is another simple application to find a dead pixel. Simply launch the application and click anywhere on the screen to change the color."
+  },
+  {
+    source: "Prim hírek",
+    url: "http://hirek.prim.hu/cikk/74344/",
+    extra: "<b>Recommended Download</b><br>translated from Hungarian",
+    quote: "One of the diseases of LCD monitors is the pixel defect, which can be easily filtered out with this small program."
+  }
+]%}
+{{ reviewList(reviews) }}

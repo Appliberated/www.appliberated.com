@@ -2,7 +2,7 @@
     "topSection": "apps",
     "navApp": "defectpx",
     "navAppName": "DefectPX",
-    "layout": "pages/page-sm",
+    "layout": "pages/page-lg",
     "layoutHero": "templates/app-hero.njk",
     "heroLead": "DefectPX allows you to easily check for dead or defective pixels on LCD monitors. Useful to test monitors before purchasing, or during the warranty period. DefectPX comes with multi-monitor support, and a very intuitive interface. Free and open-source!",
     "heroImage": "apps/defectpx/defectpx-hero.png",
@@ -29,7 +29,7 @@
             "url": "/defectpx/download/"
         },
         {
-            "title": "Donate",
+            "title": "Contribute",
             "url": "/defectpx/donate/"
         }
     ],

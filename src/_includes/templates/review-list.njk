@@ -1,0 +1,22 @@
+{% macro reviewList(reviews) %}
+  <ul class="grid grid-cols-3 gap-4">
+    {% for review in reviews %}
+      <li class="border border-gray-100 rounded-lg p-8 bg-white">
+        <h3 class="text-xl font-bold hover:text-purple-600 transition-colors duration-300">
+          <a href="{{ review.url }}" target="_blank">
+            {{ review.source }}
+          </a>
+        </h3>
+        <p class="mt-4 leading-relaxed">
+          <q>{{ review.quote }}</q>
+        </p>
+        {% if review.extra %}
+          <div class="mt-6 inline-block h-1 w-10 rounded bg-purple-600"></div>
+          <p class="mt-4 text-sm text-gray-500">
+            {{ review.extra | safe }}
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

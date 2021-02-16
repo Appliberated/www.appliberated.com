@@ -1,8 +1,8 @@
-<section class="shadow-lg mb-4 border-b py-4 bg-gray-800 bg-opacity-10">
+<section class="shadow-lg border-b py-4 bg-gray-800 bg-opacity-10">
   <div class="apl-container max-w-screen-lg">
     <nav class="flex -ml-4">
       {% for item in sectionMenu %}
-        <a href="{{ item.url }}" class="my-1 px-4 py-1.5 flex items-center justify-between font-medium hover:text-yellow-300 transition-colors duration-500 {{ 'text-yellow-300' if item.url == page.url }}">
+        <a href="{{ item.url }}" class="my-1 px-4 py-1.5 flex items-center justify-between font-medium text-white text-opacity-50 hover:text-opacity-100 transition-colors duration-300 {{ 'text-opacity-100' if item.url == page.url }}">
           {{ item.title }}
         </a>
       {% endfor %}
