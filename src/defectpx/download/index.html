@@ -6,61 +6,64 @@ title: Download DefectPX
 layoutContentProse: true
 ---
 
-<div class="max-w-screen-md">
-  <p>DefectPX runs on Windows 10, Windows 8.1, and Windows 7 SP1. DefectPX requires .NET 5.0. Just run DefectPX, and if the <a href="https://dotnet.microsoft.com/download/dotnet/current/runtime" target="_blank">.NET 5.0 Runtime</a> is not already installed on your computer, it will let you download and install it.</p>
-</div>
+{% from "templates/buttons.njk" import iconButton %}
 
-<h2>Download the Portable Version</h2>
+<div class="grid grid-cols-12 gap-8">
+  <div class="col-span-9">
+    <p>DefectPX is free and open-source. It runs on <b>Windows 10 / 8.1 / 7 SP1</b>, and requires .NET 5.0 (which is also free and open-source). Just run DefectPX, and if the <a href="https://dotnet.microsoft.com/download/dotnet/current/runtime" target="_blank">.NET 5.0 Runtime</a> is not already installed on your computer, it will let you download and install it.</p>
+    
+    <h2>Download the Portable Version</h2>
 
-<section class="shadow-lg rounded-lg border border-gray-100 p-8 bg-white">
-  <div class="grid grid-cols-12 gap-y-8">
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">2.0.0</h2>
-      <p class="m-0 leading-relaxed">Version</p>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">x64</h2>
-      <p class="m-0 leading-relaxed">Architecture</p>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">.zip</h2>
-      <p class="m-0 leading-relaxed">File format</p>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">76.1 KB</h2>
-      <p class="m-0 leading-relaxed">File size</p>
-    </div>
-    <div class="col-span-4 flex items-center justify-end">
-      <a class="apl-btn apl-btn-primary" href="https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-portable-x64.zip">Download Portable 64-bit</a><br>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">2.0.0</h2>
-      <p class="m-0 leading-relaxed">Version</p>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">x86</h2>
-      <p class="m-0 leading-relaxed">Architecture</p>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">.zip</h2>
-      <p class="m-0 leading-relaxed">File format</p>
-    </div>
-    <div class="col-span-2">
-      <h2 class="m-0 font-medium text-3xl text-gray-900">67.9 KB</h2>
-      <p class="m-0 leading-relaxed">File size</p>
-    </div>
-    <div class="col-span-4 flex items-center justify-end">
-      <a class="apl-btn apl-btn-secondary" href="https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-portable-x86.zip">Download Portable 32-bit</a><br>
-    </div>
+    <section class="my-8 shadow-lg border border-gray-100 rounded-lg p-8 bg-white">
+      <div class="grid grid-cols-4 gap-y-8">
+        <div>
+          <h2 class="m-0 font-medium text-3xl text-gray-900">64-bit</h2>
+          <p class="m-0 leading-relaxed">Architecture</p>
+        </div>
+        <div>
+          <h2 class="m-0 font-medium text-3xl text-gray-900">.zip</h2>
+          <p class="m-0 leading-relaxed">File format</p>
+        </div>
+        <div>
+          <h2 class="m-0 font-medium text-3xl text-gray-900">76.1 KB</h2>
+          <p class="m-0 leading-relaxed">File size</p>
+        </div>
+        <div>
+          {{ iconButton("apl-btn-primary", "https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-portable-x64.zip", "Portable x64", "heroicons-solid-download", true) }}
+        </div>
+        <div>
+          <h2 class="m-0 font-medium text-3xl text-gray-900">32-bit</h2>
+          <p class="m-0 leading-relaxed">Architecture</p>
+        </div>
+        <div>
+          <h2 class="m-0 font-medium text-3xl text-gray-900">.zip</h2>
+          <p class="m-0 leading-relaxed">File format</p>
+        </div>
+        <div>
+          <h2 class="m-0 font-medium text-3xl text-gray-900">67.9 KB</h2>
+          <p class="m-0 leading-relaxed">File size</p>
+        </div>
+        <div>
+          {{ iconButton("apl-btn-secondary", "https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-portable-x86.zip", "Portable x86", "heroicons-solid-download", true) }}
+        </div>
+      </div>
+    </section>
+
+    <p><b>No installation required!</b> First unzip all the files into a directory of your choosing, such as <code class="font-normal">C:\users\{username}\AppData\Local\Programs\DefectPX</code>, or <code class="font-normal">C:\Portable\DefectPX</code>. (Don't use a directory that requires Administrator privileges, such as a subdirectory under <i>Program Files</i>). Then locate the main application executable file (<code class="font-normal">DefectPX.exe</code>) and launch it.</p>
+    <p>To uninstall, just delete the extracted files, the portable version does not make any changes to your system.</p>
+
+    <h2>Download the Source Code</h2>
+    <p>DefectPX is free and open-source. The source code is available on the <a href="https://github.com/appliberated/DefectPX" target="_blank">GitHub project page</a>.</p>
+    <p>All contributions are welcome: use-cases, documentation, design, graphics, icons, code, patches, bug reports, feature requests, suggestions, etc. You do not need to be a programmer to speak up! Also, if you like DefectPX, give it a star on <a href="https://github.com/appliberated/DefectPX" target="_blank">GitHub</a>! ⭐️</p>
   </div>
-</section>
-
-<div class="max-w-screen-md">
-<p>No installation is required! First unzip all the files into a directory of your choosing. Just make sure you DON'T use a directory that requires Administrator privileges (such as a subdirectory under <i>Program Files</i>). Some good choices would be <code>C:\Portable\DefectPX</code>, or <code>C:\users\{username}\AppData\Local\Programs\DefectPX</code>.</p>
-<p>Then locate the main application executable file (<b>DefectPX.exe</b>) and launch it.</p>
-<p>To uninstall, just delete the extracted files, the portable version of DefectPX does not make any changes to your system.</p>
-
-<h2>Download the Source Code</h2>
-<p>DefectPX is free and open-source. The source code is available on the <a href="https://github.com/appliberated/DefectPX" target="_blank">GitHub project page</a>. Click on <b>Code</b>, then on <b>Download ZIP</b>.</p>
-<p>Of course, all contributions are welcome: use-cases, documentation, design, graphics, icons, code, patches, bug reports, feature requests, suggestions, etc. You do not need to be a programmer to speak up! Also, if you like DefectPX, give it a star on <a href="https://github.com/appliberated/DefectPX" target="_blank">GitHub</a>! ⭐️</p>
+  <div class="col-span-3">
+    <div class="border-l-4 border-purple-300 pl-8">
+      <h2 class="mt-0">Version 2.0.0</h2>
+      <p>This is the latest version of DefectPX. To see what has changed since the last version, check out the <a href="/{{ navApp }}/history/">Version History.</a></p>
+      <p>DefectPX was first released on November 10, 2008.</p>
+  </div>
+  </div>
 </div>
+
+
+

@@ -18,7 +18,7 @@
   }
 
   .apl-page-title {
-    @apply text-5xl font-extrabold tracking-tight text-gray-900 !important;
+    @apply text-5xl tracking-tight text-purple-900 !important;
   }
 
   .apl-btn {
