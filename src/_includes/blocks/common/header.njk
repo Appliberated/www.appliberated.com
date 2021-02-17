@@ -1,12 +1,12 @@
+{% from "templates/buttons.njk" import iconButton %}
+
 {% macro headerNavItem(link, title, itemSection) %}
-  <a class="inline-block px-4 py-1 {{ 'text-purple-600' if itemSection == topSection }} hover:text-purple-600 transition-colors duration-300" href="{{ link | url }}">{{ title }}</a>
+  <a class="inline-block px-4 py-1.5 text-white text-opacity-75 {{ 'text-opacity-100' if itemSection == topSection }} hover:text-opacity-100 transition-colors duration-300" href="{{ link | url }}">{{ title }}</a>
 {% endmacro %}
 
-<header class="bg-gray-50 text-black">
-{# <header class=""> #}
+<header>
   <div class="apl-container max-w-screen-lg">
-    {# <div class="border-b border-purple-400 py-6 sm:flex sm:items-center sm:justify-between"> #}
-    <div class="py-4 sm:flex sm:items-center sm:justify-between">
+    <div class="py-6 sm:flex sm:items-center sm:justify-between">
       <a class="text-xl italic font-semibold tracking-widest" href="{{ '/' | url }}">
         <span class="font-bold">APP</span>LIBERATED
       </a>
@@ -19,8 +19,7 @@
         {{ headerNavItem("/about/", "About", "about") }}
       </nav>
 
-      {# <a href="/{{ navApp }}/donate/" class="apl-btn apl-btn-hero">Donate</a> #}
-      <a href="/{{ navApp }}/donate/" class="apl-btn apl-btn-primary">Donate</a>
+      {{ iconButton("apl-btn-header", "/" + navApp + "/donate/", "Donate", "heroicons-outline-heart", true, "space-x-2") }}
     </div>
   </div>
 </header>
