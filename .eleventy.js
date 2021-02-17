@@ -1,3 +1,6 @@
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
+
 const filters = require('./utils/filters.js');
 
 module.exports = function (eleventyConfig) {
@@ -12,6 +15,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.setDataDeepMerge(true);
+
+  const markdownLib = markdownIt({ html: true }).use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     passthroughFileCopy: true,
