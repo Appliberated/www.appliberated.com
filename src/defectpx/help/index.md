@@ -1,5 +1,7 @@
 ---
-title: Online Help
+seoTitle: DefectPX Help
+seoDescription: 
+title: Help
 
 layoutContentProse: true
 ---

@@ -1,9 +1,8 @@
 {
   "layout": "pages/page-lg",
   "aplHeader": {
-    "topSection": "apps",
-    "donateUrl": "/defectpx/contribute/"
-  },
+    "topSection": "apps"
+  },  
   "aplHero": {
     "template": "templates/app-hero.njk",
     "title": "DefectPX",
@@ -15,34 +14,14 @@
   "aplSection": {
     "menu": [
       {
-        "title": "Overview",
+        "title": "DefectPX",
         "url": "/defectpx/"
-      },
-      {
-        "title": "Help",
-        "url": "/defectpx/help/"
-      },
-      {
-        "title": "Reviews",
-        "url": "/defectpx/reviews/"
-      },
-      {
-        "title": "License",
-        "url": "/defectpx/license/"
-      },
-      {
-        "title": "Download",
-        "url": "/defectpx/download/"
-      },
-      {
-        "title": "Contribute",
-        "url": "/defectpx/contribute/"
       }
     ]
   },
   "aplBottomCTA": {
     "template": "templates/donate-bottom-cta.njk",
-    "title": "DefectPX",
-    "url": "/defectpx/contribute/"
+    "title": "our apps",
+    "url": "/contribute/"
   }
 }

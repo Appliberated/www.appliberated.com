@@ -1,7 +1,7 @@
 {% from "templates/buttons.njk" import iconButton %}
 
 {% macro headerNavItem(link, title, itemSection) %}
-  <a class="inline-block px-4 py-1.5 text-white text-opacity-75 {{ 'text-opacity-100' if itemSection == topSection }} hover:text-opacity-100 transition-colors duration-300" href="{{ link | url }}">{{ title }}</a>
+  <a class="inline-block px-4 py-1.5 text-white text-opacity-75 {{ 'text-opacity-100' if itemSection == aplHeader.topSection }} hover:text-opacity-100 transition-colors duration-300" href="{{ link | url }}">{{ title }}</a>
 {% endmacro %}
 
 <header>
@@ -19,7 +19,7 @@
         {{ headerNavItem("/about/", "About", "about") }}
       </nav>
 
-      {{ iconButton("apl-btn-header", "/" + navApp + "/donate/", "Donate", "heroicons-outline-heart", true, "space-x-2") }}
+      {{ iconButton("apl-btn-header", aplHeader.donateUrl if aplHeader.donateUrl else "/contribute/", "Donate", "heroicons-outline-heart", true, "space-x-2") }}
     </div>
   </div>
 </header>

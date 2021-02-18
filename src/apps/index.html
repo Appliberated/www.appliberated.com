@@ -1,0 +1,21 @@
+---
+seoTitle: Appliberated Apps
+seoDescription: 
+
+layout: pages/page-lg-titleless
+---
+
+{% from "templates/buttons.njk" import iconButton %}
+
+<section class="py-16 text-gray-600">
+  <div class="flex flex-wrap text-center">
+    <div class="sm:w-1/2">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="/assets/img/apps/defectpx/defectpx-home-screenshot.png">
+      </div>
+      <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">DefectPX</h2>
+      <p class="leading-relaxed text-base">Easily check for dead or defective pixels on LCD monitors. Useful to test monitors before purchasing, or during the warranty period.</p>
+      {{ iconButton("mt-6 apl-btn-primary", "/defectpx/", "Learn More", "heroicons-outline-arrow-right") }}
+    </div>
+  </div>
+</section>

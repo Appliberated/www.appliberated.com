@@ -28,13 +28,13 @@
     <div class="apl-bg-hero text-white">
       {% include "blocks/common/header.njk" %}
 
-      {% if layoutHero %}
-        {% include layoutHero %}
+      {% if aplHero.template %}
+        {% include aplHero.template %}
       {% else %}
         {% include "templates/default-hero.njk" %}
       {% endif %}
 
-      {% if sectionMenu %}
+      {% if aplSection.menu %}
         {% include "components/section-menu.njk" %}
       {% endif %}
 
@@ -42,8 +42,8 @@
 
     {{ content | safe }}
 
-    {% if bottomCTA %}
-      {% include bottomCTA %}
+    {% if aplBottomCTA.template %}
+      {% include aplBottomCTA.template %}
     {% endif %}
 
     {% include "blocks/common/footer.njk" %}
