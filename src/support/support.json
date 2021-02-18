@@ -1,16 +1,16 @@
 {
   "layout": "pages/page-lg-titleless",
   "aplHeader": {
-    "topSection": "apps"
+    "topSection": "support"
   },  
   "aplHero": {
-    "title": "Our Apps"
+    "title": "Support"
   },
   "aplSection": {
     "menu": [
       {
-        "title": "DefectPX",
-        "url": "/defectpx/"
+        "title": "Support",
+        "url": "/support/"
       }
     ]
   },

@@ -1,16 +1,16 @@
 {
   "layout": "pages/page-lg-titleless",
   "aplHeader": {
-    "topSection": "apps"
+    "topSection": "reviews"
   },  
   "aplHero": {
-    "title": "Our Apps"
+    "title": "Reviews & Awards"
   },
   "aplSection": {
     "menu": [
       {
         "title": "DefectPX",
-        "url": "/defectpx/"
+        "url": "/defectpx/reviews/"
       }
     ]
   },

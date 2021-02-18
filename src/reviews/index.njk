@@ -1,0 +1,36 @@
+---
+seoTitle: Appliberated Reviews
+seoDescription:
+---
+
+{% from "templates/review-list.njk" import reviewList %}
+
+<h2 class="text-3xl font-medium text-gray-900">DefectPX Reviews</h2>
+{% set reviews = [
+  {
+    source: "Softpedia",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
+    quote: "A small but very useful application which allows you to easily check for dead or defective pixels on LCD monitors."
+  },
+  {
+    source: "List of Freeware",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
+    extra: "Nishant Gola, Author",
+    quote: "DefectPX is another simple application to find a dead pixel. Simply launch the application and click anywhere on the screen to change the color."
+  },
+  {
+    source: "Prim hírek",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
+    extra: "<b>Recommended Download</b><br>translated from Hungarian",
+    quote: "One of the diseases of LCD monitors is the pixel defect, which can be easily filtered out with this small program."
+  }
+]%}
+{{ reviewList(class = "mt-16", reviews) }}
+<p class="mt-4 prose prose-purple">
+  <a href="/defectpx/reviews/">More DefectPX Reviews</a>
+</p>
+
+

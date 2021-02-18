@@ -1,16 +1,20 @@
 {
   "layout": "pages/page-lg-titleless",
   "aplHeader": {
-    "topSection": "apps"
+    "topSection": "about"
   },  
   "aplHero": {
-    "title": "Our Apps"
+    "title": "About Appliberated"
   },
   "aplSection": {
     "menu": [
       {
-        "title": "DefectPX",
-        "url": "/defectpx/"
+        "title": "Overview",
+        "url": "/about/"
+      },
+      {
+        "title": "Privacy Policy",
+        "url": "/about/privacy/"
       }
     ]
   },
