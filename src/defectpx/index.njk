@@ -5,25 +5,49 @@ seoDescription:
 layout: pages/page-lg-titleless
 ---
 
+{% from "templates/features.njk" import oneLineFeatures %}
 {% from "templates/review-list.njk" import reviewList %}
+
+
+{{ oneLineFeatures(
+    "Test for dead, stuck, or defective pixels",
+    "Just change a few colors and test. Test monitors before purchasing. Test screens during the warranty period. Test Anytime and Anywhere.",
+    [
+      "Primary and custom colors",
+      "Mouse and keyboard shortcuts",
+      "Portable, no installation required",
+      "Multi-monitor support",
+      "Very intuitive interface",
+      "Free and open-source"
+    ]) }}
+
+<div class="mt-16 shadow-lg border border-gray-100 rounded-lg p-4 bg-white">
+  <img src="/assets/img/apps/defectpx/defectpx-home-screenshot.png" alt="DefectPX Screenshot">
+</div>
+
+<h2 class="mt-24 sm:text-3xl text-2xl font-medium text-center text-gray-900">What others are saying</h2>
+
 
 {% set reviews = [
   {
     source: "Softpedia",
-    url: "https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/DefectPX.shtml",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
     quote: "A small but very useful application which allows you to easily check for dead or defective pixels on LCD monitors."
   },
   {
     source: "List of Freeware",
-    url: "https://listoffreeware.com/free-dead-pixel-test-software-windows/",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
     extra: "Nishant Gola, Author",
     quote: "DefectPX is another simple application to find a dead pixel. Simply launch the application and click anywhere on the screen to change the color."
   },
   {
     source: "Prim hírek",
-    url: "http://hirek.prim.hu/cikk/74344/",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
     extra: "<b>Recommended Download</b><br>translated from Hungarian",
     quote: "One of the diseases of LCD monitors is the pixel defect, which can be easily filtered out with this small program."
   }
 ]%}
-{{ reviewList(reviews) }}
+{{ reviewList(class = "mt-16", reviews) }}

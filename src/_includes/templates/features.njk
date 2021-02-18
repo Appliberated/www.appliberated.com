@@ -1,0 +1,19 @@
+{% macro oneLineFeatures(title, description, features) %}
+  <section class="mt-16 text-gray-600">
+    <div class="text-center">
+      <h1 class="sm:text-3xl text-2xl font-medium text-center text-gray-900">{{ title }}</h1>
+      <p class="mt-4 text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">{{ description }}</p>
+    </div>
+    <div class="mt-20 flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      {% for feature in features %}
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            {% set svgClasses = "text-purple-600 w-6 h-6 flex-shrink-0 mr-4" %}
+            {% include "assets/svg/tailblocks-check.svg" %}
+            <span class="font-medium">{{ feature }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endmacro %}
