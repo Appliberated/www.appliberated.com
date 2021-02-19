@@ -48,11 +48,5 @@
 
     {% include "blocks/common/footer.njk" %}
   </div>
-
-  {% if site.isProduction %}
-    <script>
-      window.goatcounter.visit_count({append: 'body'})
-    </script>
-  {% endif %}
 </body>
 </html>
