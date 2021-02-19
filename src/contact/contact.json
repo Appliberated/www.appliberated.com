@@ -1,16 +1,16 @@
 {
   "layout": "pages/page-lg-titleless",
   "aplHeader": {
-    "topSection": "support"
+    "topSection": "contact"
   },  
   "aplHero": {
-    "title": "Support"
+    "title": "Contact us"
   },
   "aplSection": {
     "menu": [
       {
-        "title": "Support",
-        "url": "/support/"
+        "title": "Contact",
+        "url": "/contact/"
       }
     ]
   },
