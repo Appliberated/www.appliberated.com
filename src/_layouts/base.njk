@@ -19,9 +19,9 @@
   <meta name="theme-color" content="#000000">
 
   {# Google Analytics  #}
-  {# {% if site.isProduction %}
-    {% include "blocks/head/google-analytics.njk" %}
-  {% endif %} #}
+  {% if site.isProduction %}
+    {% include "blocks/common/web-analytics.njk" %}
+  {% endif %}
 </head>
 <body id="site" data-prose="{{ layoutContentProse }}">
   <div class="bg-gray-50">
