@@ -18,7 +18,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#000000">
 
-  {# Google Analytics  #}
+  {# Web Analytics  #}
   {% if site.isProduction %}
     {% include "blocks/common/web-analytics.njk" %}
   {% endif %}
@@ -48,5 +48,11 @@
 
     {% include "blocks/common/footer.njk" %}
   </div>
+
+  {% if site.isProduction %}
+    <script>
+      window.goatcounter.visit_count({append: 'body'})
+    </script>
+  {% endif %}
 </body>
 </html>
