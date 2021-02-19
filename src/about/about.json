@@ -1,15 +1,15 @@
 {
-  "layout": "pages/page-lg-titleless",
+  "layout": "pages/page-lg",
   "aplHeader": {
     "topSection": "about"
   },  
   "aplHero": {
-    "title": "About Appliberated"
+    "title": "About"
   },
   "aplSection": {
     "menu": [
       {
-        "title": "Overview",
+        "title": "About",
         "url": "/about/"
       },
       {
