@@ -1,5 +1,5 @@
 {% macro reviewList(class = "", reviews) %}
-  <ul class="grid grid-cols-3 gap-4 {{ class }}">
+  <ul class="grid sm:grid-cols-3 gap-4 {{ class }}">
     {% for review in reviews %}
       <li class="border border-gray-100 rounded-lg p-8 bg-white">
         <h3 class="text-xl font-bold hover:text-purple-600 transition-colors duration-300">

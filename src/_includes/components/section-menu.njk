@@ -1,6 +1,6 @@
 <section class="shadow-lg border-b py-5 bg-gray-800 bg-opacity-10">
   <div class="apl-container max-w-screen-lg">
-    <nav class="flex -ml-4">
+    <nav class="flex flex-wrap -ml-4">
       {% for item in aplSection.menu %}
         <a href="{{ item.url }}" class="px-4 py-1.5 flex items-center justify-between font-medium text-white text-opacity-50 hover:text-opacity-100 transition-colors duration-300 {{ 'text-opacity-100' if item.url == page.url }}">
           {{ item.title }}

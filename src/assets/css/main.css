@@ -10,7 +10,7 @@
 
 @layer components {
   .apl-container {
-    @apply container mx-auto;
+    @apply px-6 md:px-12 xl:px-0 container mx-auto;
   }
 
   .apl-container-xl {

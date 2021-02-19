@@ -1,12 +1,12 @@
 {% macro iconButton(type, url, caption, icon, iconBefore = false, iconSpacing = "space-x-3") %}
-  <a href="{{ url }}" class="apl-btn inline-flex items-center {{ type }} {{ iconSpacing }}">
+  <a href="{{ url }}" class="apl-btn inline-flex items-start sm:items-center {{ type }} {{ iconSpacing }}">
     {% if not iconBefore %}
-      <span>{{ caption }}</span>
+      <span class="whitespace-nowrap">{{ caption }}</span>
     {% endif %}
     {% set svgClasses = "h-4 w-4" %}
     {% include "assets/svg/" + icon + ".svg" %}
     {% if iconBefore %}
-      <span>{{ caption }}</span>
+      <span class="whitespace-nowrap">{{ caption }}</span>
     {% endif %}
   </a>
 {% endmacro %}

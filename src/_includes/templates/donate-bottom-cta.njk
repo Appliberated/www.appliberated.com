@@ -1,9 +1,9 @@
 {% from "templates/buttons.njk" import iconButton %}
 
 <div class="pt-16 pb-28 bg-gray-100">
-  <div class="apl-container max-w-screen-lg flex items-center justify-between space-x-16">
+  <div class="apl-container max-w-screen-lg flex flex-col sm:flex-row items-center justify-between sm:space-x-16">
     <h3 class="text-3xl font-bold tracking-tight text-gray-900">
-      Donations are the only way<br><span class="text-purple-600">to maintain and support {{ aplBottomCTA.title }}</span>
+      Donations are the only way <br class="hidden sm:visible"><span class="text-purple-600">to maintain and support {{ aplBottomCTA.title }}</span>
     </h3>
     {% if aplBottomCTA.thankYou %}
       <div class="inline-flex items-center space-x-4">
