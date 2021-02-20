@@ -17,11 +17,6 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#000000">
-
-  {# Web Analytics  #}
-  {% if site.isProduction %}
-    {% include "blocks/common/web-analytics.njk" %}
-  {% endif %}
 </head>
 <body id="site" data-prose="{{ layoutContentProse }}">
   <div class="bg-gray-50">
@@ -48,5 +43,10 @@
 
     {% include "blocks/common/footer.njk" %}
   </div>
+
+  {# Web Analytics  #}
+  {% if site.isProduction %}
+    {% include "blocks/common/web-analytics.njk" %}
+  {% endif %}
 </body>
 </html>
