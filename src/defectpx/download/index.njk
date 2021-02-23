@@ -1,0 +1,80 @@
+---
+seoTitle: DefectPX Free Download
+seoDescription:
+title: Download DefectPX
+
+layoutContentProse: true
+---
+
+{% from "templates/download-card.njk" import downloadCard %}
+{% from "templates/buttons.njk" import iconButton %}
+
+<div class="grid sm:grid-cols-12 gap-8">
+  <div class="col-span-9">
+
+    <h2 class="mt-0">Download the Installable Version</h2>
+    {{ downloadCard([
+      {
+        data: [{ k: "Architecture", v: "64-bit"}, { k: "File format", v: ".exe"}, { k: "File size", v: "1.57 MB"}],
+        button: {
+          type: "apl-btn-primary",
+          url: "https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-installer-x64.exe", 
+          caption: "Installer x64"
+        }
+      },
+      {
+        data: [{ k: "Architecture", v: "32-bit"}, { k: "File format", v: ".exe"}, { k: "File size", v: "1.57 MB"}],
+        button: {
+          type: "apl-btn-secondary",
+          url: "https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-installer-x86.exe", 
+          caption: "Installer x86"
+        }
+      }
+      ]) }}
+    <p>Installs DefectPX on your PC, and sets up an uninstaller. <a href="/defectpx/help/#installable">See instructions</a></p>
+
+    <h2>Download the Portable Version</h2>
+    {{ downloadCard([
+      {
+        data: [{ k: "Architecture", v: "64-bit"}, { k: "File format", v: ".zip"}, { k: "File size", v: "76.1 KB"}],
+        button: {
+          type: "apl-btn-primary",
+          url: "https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-portable-x64.zip", 
+          caption: "Portable x64"
+        }
+      },
+      {
+        data: [{ k: "Architecture", v: "32-bit"}, { k: "File format", v: ".zip"}, { k: "File size", v: "67.9 KB"}],
+        button: {
+          type: "apl-btn-secondary",
+          url: "https://github.com/appliberated/DefectPX/releases/latest/download/defectpx-portable-x86.zip", 
+          caption: "Portable x86"
+        }
+      }
+      ]) }}
+    <p>No installation required! Download, unzip, and run! <a href="/defectpx/help/#portable">See instructions</a></p>
+
+    <h2>System Requirements</h2>
+    <p>DefectPX runs on
+      <b>Windows 10, 8.1, and 7 SP1</b>. It requires the
+      <a href="https://dotnet.microsoft.com/download/dotnet/current/runtime" target="_blank">.NET 5.0 Runtime</a>
+      (which is
+      <a href="/defectpx/license/">also</a>
+      free and open-source). DefectPX will let you download and install it, if it's not already installed on your PC.</p>
+
+    <h2>Download the Source Code</h2>
+    <p>DefectPX is free and open-source. The source code is available on the
+      <a href="https://github.com/appliberated/DefectPX" target="_blank">GitHub project page</a>.</p>
+    <p>All contributions are welcome: use-cases, documentation, design, graphics, icons, code, patches, bug reports, feature requests, suggestions, etc. You do not need to be a programmer to speak up! Also, if you like DefectPX, give it a star on
+      <a href="https://github.com/appliberated/DefectPX" target="_blank">GitHub</a>! ⭐️</p>
+  </div>
+  <div class="col-span-3">
+    <div class="border-l-4 border-purple-300 pl-8">
+      <h2 class="mt-0">Version 2.0.0</h2>
+      <p>This is the latest version of DefectPX. To see what has changed since the last version, check out the
+        <a href="/defectpx/history/">Version History.</a>
+      </p>
+      <p>DefectPX was first released on November 10, 2008.</p>
+    </div>
+  </div>
+</div>

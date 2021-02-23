@@ -1,0 +1,19 @@
+{% from "templates/buttons.njk" import iconButton %}
+
+{% macro downloadCard(downloads) %}
+  <div class="my-8 shadow-lg border border-gray-100 rounded-lg p-8 bg-white">
+    <div class="grid sm:grid-cols-4 gap-y-8">
+      {% for download in downloads %}
+        {% for kv in download.data %}
+          <div>
+            <h2 class="m-0 font-medium text-3xl text-gray-900">{{ kv.v }}</h2>
+            <p class="m-0 leading-relaxed">{{ kv.k }}</p>
+          </div>
+        {% endfor %}
+        <div>
+          {{ iconButton(download.button.type, download.button.url, download.button.caption, "heroicons-solid-download", true) }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
