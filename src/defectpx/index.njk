@@ -30,24 +30,24 @@ layout: pages/page-lg-titleless
 
 {% set reviews = [
   {
+    source: "MajorGeeks",
+    url: "/defectpx/reviews/",
+    samePageUrl: true,
+    quote: "DefectPX permits straightforward dead, defective, or stuck pixel detection. … The interface is simple and intuitive, making it of use to any user who wants to ensure their LCD monitor is up to snuff."
+  },
+  {
     source: "Softpedia",
     url: "/defectpx/reviews/",
     samePageUrl: true,
-    quote: "A small but very useful application which allows you to easily check for dead or defective pixels on LCD monitors."
+    extra: "Cristian Sarasanu, Editor",
+    quote: "Save both money and time by taking advantage of this lightweight application capable to detect dead or stuck pixels on LCD monitors"
   },
   {
-    source: "List of Freeware",
+    source: "News Break",
     url: "/defectpx/reviews/",
     samePageUrl: true,
-    extra: "Nishant Gola, Author",
-    quote: "DefectPX is another simple application to find a dead pixel. Simply launch the application and click anywhere on the screen to change the color."
-  },
-  {
-    source: "Prim hírek",
-    url: "/defectpx/reviews/",
-    samePageUrl: true,
-    extra: "<b>Recommended Download</b><br>translated from Hungarian",
-    quote: "One of the diseases of LCD monitors is the pixel defect, which can be easily filtered out with this small program."
+    extra: "<b>In the news</b>",
+    quote: "... noticing dead pixels is not going to feel good. DefectPX can help you avoid such issues by detecting dead or stuck pixels, before or after the acquisition."
   }
 ]%}
 {{ reviewList(class = "mt-16", reviews) }}
