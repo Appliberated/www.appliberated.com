@@ -40,11 +40,12 @@
   }
 
   .apl-btn-header {
-    @apply px-5 py-2.5 text-sm bg-apl-orange hover:bg-apl-orange-800;
+    @apply px-5 py-2.5 text-sm bg-apl-orange hover:bg-white hover:text-black;
   }
 
   .apl-btn-hero {
-    @apply bg-apl-orange hover:bg-apl-orange-800;
+    /* @apply bg-apl-orange hover:bg-apl-orange-800; */
+    @apply bg-apl-orange hover:bg-white hover:text-black;
   }
 
 }
