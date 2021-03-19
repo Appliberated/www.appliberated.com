@@ -8,8 +8,14 @@ module.exports = {
     extend: {
       colors: {
         'dark-footer': '#151515',
+        'apl-purple': { DEFAULT: '#6030B2', "b71": "#6739B5" },
+        'apl-orange': { DEFAULT: '#ff8200', "800": "#e16400", }, 
       },
+      opacity: {
+        '7': '0.07',
+      },      
       padding: {
+        '18': '4.5rem',
         '38': '9.5rem',
       },
       width: {

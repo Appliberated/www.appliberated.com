@@ -1,5 +1,5 @@
-<section class="shadow-lg border-b py-5 bg-gray-800 bg-opacity-10">
-  <div class="apl-container max-w-screen-lg">
+<section class="shadow-lg border-b py-5 bg-white bg-opacity-7">
+  <div class="apl-container-lg flex items-center justify-between">
     <nav class="flex flex-wrap -ml-4">
       {% for item in aplSection.menu %}
         <a href="{{ item.url }}" class="px-4 py-1.5 flex items-center justify-between font-medium text-white text-opacity-50 hover:text-opacity-100 transition-colors duration-300 {{ 'text-opacity-100' if item.url == page.url }}">
@@ -7,5 +7,19 @@
         </a>
       {% endfor %}
     </nav>
+    {% if aplSection.social %}
+      <nav class="flex flex-wrap gap-x-8">
+        {% if aplSection.social.github %}
+          <a href="{{ aplSection.social.github }}" target="_blank">
+            <img class="w-7" src="{{ 'third/social/github-white.svg' | imgurl }}">
+          </a>
+        {% endif %}
+        {% if aplSection.social.tumblr %}
+        <a href="{{ aplSection.social.tumblr }}" target="_blank">
+          <img class="w-7" src="{{ 'third/social/tumblr-white.svg' | imgurl }}">
+        </a>
+        {% endif %}
+      </nav>
+    {% endif %}
   </div>
 </section>

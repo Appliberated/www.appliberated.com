@@ -1,14 +1,14 @@
 {% from "templates/buttons.njk" import iconButton %}
 
 {% macro headerNavItem(link, title, itemSection) %}
-  <a class="inline-block px-4 py-1.5 text-white text-opacity-75 {{ 'text-opacity-100' if itemSection == aplHeader.topSection }} hover:text-opacity-100 transition-colors duration-300" href="{{ link | url }}">{{ title }}</a>
+  <a class="inline-block px-4 py-1.5 text-white text-opacity-75 {{ 'text-opacity-100 apl-header-nav-current' if itemSection == aplHeader.topSection }} hover:text-opacity-100 transition-colors duration-300" href="{{ link | url }}">{{ title }}</a>
 {% endmacro %}
 
 <header>
   <div class="apl-container max-w-screen-lg">
-    <div class="py-6 sm:flex sm:items-center sm:justify-between">
-      <a class="text-xl italic font-semibold tracking-widest" href="{{ '/' | url }}">
-        <span class="font-bold">APP</span>LIBERATED
+    <div class="pt-8 sm:flex sm:items-center sm:justify-between">
+      <a href="{{ '/' | url }}">
+        <img src="{{ 'branding/logo-header.svg' | imgurl }}" alt="Appliberated">
       </a>
 
       <nav class="font-medium">

@@ -40,7 +40,11 @@
         "title": "Contribute",
         "url": "/defectpx/contribute/"
       }
-    ]
+    ],
+    "social": {
+      "github": "https://github.com/appliberated/DefectPX",
+      "tumblr": "https://defectpx.tumblr.com/"
+    }
   },
   "aplBottomCTA": {
     "template": "templates/donate-bottom-cta.njk",
